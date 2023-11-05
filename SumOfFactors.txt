@@ -1,0 +1,36 @@
+import java.util.Scanner; 
+class SumOfFactors
+{
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter The Factorial No");
+        int num=s.nextInt();
+        System.out.println("Enter The No");
+        int den=s.nextInt();
+
+    
+        
+        while (den<=num)
+         {
+                if (num % den==0)
+                {
+                    System.out.println(den);
+                }
+
+                  den++;
+		 }
+        
+           int  ans=num+den++;
+		   System.out.println(ans);
+		   if ( ans %2==0)
+		    {
+			   System.out.println("It IS A EvenSum "+ans);
+			   
+		    }
+		   else
+		    {
+                          System.out.println("It IS A OddSum "+ans);
+                    }
+     }
+}
